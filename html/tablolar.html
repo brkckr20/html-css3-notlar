@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablolar</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            /* iki border varsa borderları ust uste bindirir */
+        }
+
+        td,
+        th {
+            padding: 10px;
+            text-align: left;
+        }
+
+        table {
+            /* border-spacing: 1; */
+            /* borderler arası bosluk */
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width:100%;">
+        <caption>Tablo ismi : Isimler</caption><!-- tablo başlığı  -->
+        <tr>
+            <th>Isim</th><!-- table head -->
+            <th>Soyisim</th><!-- table head -->
+            <th>Yas</th><!-- table head -->
+            <th colspan="2">Adres</th><!-- table head -->
+            <th>Profil Resmi</th><!-- table head -->
+        </tr>
+        <tr>
+            <!-- table row -->
+            <td>Burak</td><!-- table data -->
+            <td>Cakir</td><!-- table data -->
+            <td>30</td><!-- table data -->
+            <td>Denizli</td><!-- table data -->
+            <td>Babadağ</td><!-- table data -->
+            <td><img src="img/toa-heftiba-FV3GConVSss-unsplash.jpg" style="width: 50;height:50px" alt=""></td>
+            <!-- table data -->
+        </tr>
+        <tr>
+    </table>
+</body>
+
+</html>
