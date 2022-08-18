@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listeler</title>
+    <style>
+        #menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li {
+            float: left;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- sırasız liste -->
+    <h3>Unordered List</h3>
+    <ul style="list-style-type: disc;">
+        <li>Burak</li>
+        <li>Çakır</li>
+    </ul>
+    <!-- sırasız liste -->
+    <ul style="list-style-type: square;">
+        <li>Burak</li>
+        <li>Çakır</li>
+    </ul>
+
+    <!-- sırasız liste -->
+    <ul style="list-style-type: circle;">
+        <li>Burak</li>
+        <li>Çakır
+            <ul style="list-style-type: disc;">
+                <li>test 1</li>
+                <li>test 2</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul id="menu">
+        <li>Anasayfa</li>
+        <li>Hakkimda</li>
+        <li>Iletisim</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol type="I">
+        <li>Ahmet</li>
+        <li>Murat</li>
+        <li>Kemal</li>
+    </ol>
+
+    <ol type="A">
+        <li>Ahmet 2</li>
+        <li>Murat 2</li>
+        <li>Kemal 2</li>
+    </ol>
+
+    <ol type="i">
+        <li>Ahmet 2</li>
+        <li>Murat 2</li>
+        <li>Kemal 2</li>
+    </ol>
+
+    <ol type="1" start="30">
+        <li>Ahmet 2</li>
+        <li>Murat 2</li>
+        <li>Kemal 2</li>
+    </ol>
+</body>
+
+</html>
