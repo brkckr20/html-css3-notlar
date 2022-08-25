@@ -36,7 +36,22 @@
             <input type="checkbox" name="react" id="react" value="react"><span>ReactJS</span>
             <input type="checkbox" name="laravel" id="laravel" value="laravel"><span>Laravel</span>
         </div>
+        <br>
         <input type="submit" value="Kaydet" />
+        <input type="reset" value="Formu Temizle" />
+        <input type="button" value="Default Button" onclick="alert('Merhaba')" />
+        <hr>
+        <label for="arabalar">Araba Markaları</label>
+        <select name="arabalar" id="arabalar" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="opel">Opel</option>
+            <option value="bmw" selected>BMW</option>
+        </select>
+        <br>
+        <br>
+        <textarea name="aciklama" id="aciklama" cols="30" rows="10" placeholder="Açıklamalar"></textarea>
+        <br><br>
+        <button type="button" onclick="console.log('selamlar')">Düz html button</button>
     </form>
 
 </body>
