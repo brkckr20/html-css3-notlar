@@ -17,19 +17,26 @@
 <body>
     <form action="#" method="post">
         <!-- varsayılan get methodudur -->
-        <div>
-            <label for="name">İsim : </label>
-            <input type="text" name="name" id="name" />
-        </div>
-        <div>
-            <label for="surname">soyisim : </label>
-            <input type="text" name="surname" id="surname" />
-        </div>
-        <div>
-            <label for="kadin">Cinsiyet : </label>
-            <input type="radio" name="cinsiyet" value="erkek" id="erkek" checked /><span>Erkek</span>
-            <input type="radio" name="cinsiyet" value="kadin" id="kadin" /><span>Kadın</span>
-        </div>
+        <fieldset>
+            <legend>İsim bilgileri</legend>
+            <div>
+                <label for="name">İsim : </label>
+                <input type="text" name="name" id="name" />
+            </div>
+            <div>
+                <label for="surname">soyisim : </label>
+                <input type="text" name="surname" id="surname" />
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Cinsiyet</legend>
+            <div>
+                <label for="kadin">Cinsiyet : </label>
+                <input type="radio" name="cinsiyet" value="erkek" id="erkek" checked /><span>Erkek</span>
+                <input type="radio" name="cinsiyet" value="kadin" id="kadin" /><span>Kadın</span>
+            </div>
+        </fieldset>
         <div>
             <label for="kadin">Yetkinlikler : </label>
             <input type="checkbox" name="js" id="js" value="js" checked="checked"><span>Javascript</span>
@@ -52,6 +59,7 @@
         <textarea name="aciklama" id="aciklama" cols="30" rows="10" placeholder="Açıklamalar"></textarea>
         <br><br>
         <button type="button" onclick="console.log('selamlar')">Düz html button</button>
+        <button type="button" onclick="console.clear()">Console Temizle</button>
     </form>
 
 </body>
