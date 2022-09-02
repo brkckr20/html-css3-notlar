@@ -1,0 +1,21 @@
+#p1 {
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 5px;
+    padding: 10px;
+    border: 2px purple solid;
+}
+
+#p2 {
+    border: 5px solid pink;
+    padding: 20px;
+    border-width: 10px 20px;
+    border-radius: 20px;
+}
+
+#p3 {
+    border-top: 5px solid black;
+    padding: 10px;
+    border-bottom: 5px solid rgba(0, 0, 0, .5);
+
+}
