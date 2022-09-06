@@ -1,0 +1,44 @@
+.paragraf1 {
+    color: red;
+    color: #ff0000;
+    font-size: 32px;
+    background-color: #ececec;
+
+    /* yazıyı bulunduğu alana yayar */
+    text-align: justify;
+
+    /* sağdan sola yazma */
+    /* direction: rtl;
+    unicode-bidi: bidi-override; */
+}
+
+.paragraf2 {
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+}
+
+
+.paragraf3 {
+    text-transform: lowercase;
+    text-transform: uppercase;
+
+    text-transform: capitalize;
+    /* her kelimenin ilk harfi büyük */
+
+    text-indent: 20px;
+    /* paragraf başı 20px boşluk */
+
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+.paragraf4 {
+    word-spacing: 10px;
+    /* her kelime arasında boşluk bırakmak */
+    font-family: 'Poppins', sans-serif;
+}
+
+.paragraf5 {
+    text-shadow: 1px 1px red;
+}
