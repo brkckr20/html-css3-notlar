@@ -1,0 +1,31 @@
+.parent {
+    width: 300px;
+    border: 1px solid;
+    font-size: 30px;
+}
+
+.item {
+    background-color: orange;
+    height: 30px;
+    margin: 10px;
+}
+
+.item-yuzde {
+    width: 50%;
+    /* parentin büyüklüğüne göre */
+}
+
+.item-vw {
+    width: 50vw;
+    height: 50vh;
+}
+
+.rem {
+    font-size: 1rem;
+    /* defaultun 16 nın katlarını alarak devam eder 1rem 2rem gibi  */
+}
+
+.em {
+    font-size: 1em;
+    /* parent elementteki font size in katlarını alır. */
+}
