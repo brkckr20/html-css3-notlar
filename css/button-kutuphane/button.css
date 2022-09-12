@@ -28,3 +28,48 @@
     background-color: #007a3b;
     border-color: #007a3b;
 }
+
+.btn-accent {
+    background-color: #2196f3;
+    color: white;
+}
+
+.btn-accent:hover {
+    background-color: #0069c0;
+}
+
+.btn-warning {
+    background-color: #ffeb3b;
+}
+
+.btn-warning:hover {
+    background-color: #c8b900;
+}
+
+.btn-danger {
+    background-color: #ff7043;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c63f17;
+
+}
+
+.btn-info {
+    background-color: #a7c0cd;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #4b636e;
+}
+
+.btn-pink {
+    background-color: #e91e63;
+    color: white;
+}
+
+.btn-pink:hover {
+    background-color: #b0003a;
+}
