@@ -1,0 +1,14 @@
+.img1 {
+    float: left
+}
+
+.img2 {
+    float: right
+}
+
+p {
+    clear: left;
+    clear: right;
+    clear: both;
+    /* her iki taraftan float işlemlerini yok sayar */
+}
