@@ -67,3 +67,96 @@
     color: #333;
     line-height: 1.2;
 }
+
+.main-content {
+    display: flex;
+    padding: 2% 1%;
+}
+
+.main-item {
+    flex-grow: 1;
+    padding: 2% 0;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.main-item h2 {
+    color: #da4167;
+}
+
+.main-item p {
+    margin-top: 0.5rem;
+}
+
+.form-container {
+    background-image: url(https://images.unsplash.com/photo-1661956602153-23384936a1d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container h2 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #da4167;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.form input,
+.form textarea {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid #da4167;
+    width: 80%;
+}
+
+.form button {
+    background-color: #da4167;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    width: 50%;
+    border: none;
+}
+
+
+@media screen and (max-width :600px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .menu ul li {
+        padding: 5px;
+    }
+
+    .banner h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner p {
+        font-size: 1.25rem;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+@media(max-width :1440px) {}
