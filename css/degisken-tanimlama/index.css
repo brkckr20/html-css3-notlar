@@ -1,0 +1,17 @@
+:root {
+    --anarenk: pink;
+    --custom-border: 1px solid darkgreen
+}
+
+h2 {
+    color: var(--anarenk);
+    background: #000;
+}
+
+p {
+    --anarenk: orange;
+    /* root olarak tanımlanmış olan değeri ezmiş olduk */
+    color: var(--anarenk);
+    border: var(--custom-border);
+    padding: 0.5rem;
+}
