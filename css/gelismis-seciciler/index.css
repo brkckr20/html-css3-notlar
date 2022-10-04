@@ -1,0 +1,78 @@
+body {
+    font-size: 2rem;
+}
+
+/* element seçici */
+h3 {}
+
+/* id seçici */
+#test {
+    background-color: red;
+}
+
+/* class seçici */
+.test {
+    background-color: blue;
+}
+
+.para1 {
+    color: green;
+}
+
+/* birden fazla değere aynı işlemleri uygulamak */
+/* span,
+p {
+    color: blue;
+} */
+
+/* p içindeki span */
+div span {
+    color: rebeccapurple;
+}
+
+
+/* direkt çocuk element seçimi */
+div>p {
+    color: red;
+}
+
+
+/* kardeş element seçimi (h2 nin kardeşi - aynı seviyede olan elementler) */
+/* kendinden sonraki elementlere etki eder! */
+h2~p {
+    background-color: blueviolet;
+}
+
+p~div {
+    background-color: aquamarine;
+}
+
+
+
+
+/* kendisinden sonraki  ilk kardeş eleman seçimi div den hemen sonra gelen ilk p etiketini seçer */
+
+div+p {
+    background-color: bisque;
+}
+
+p+div {
+    background-color: darkblue;
+}
+
+
+/* h2 elementlerinden class'ı test olanlar hariç tutulsun demek */
+h2:not(.test) {
+    background-color: yellowgreen;
+}
+
+
+input:not(:checked) {
+    margin: 20px;
+}
+
+
+/* attribute seçici */
+input[type="text"] {
+    background-color: crimson;
+}
