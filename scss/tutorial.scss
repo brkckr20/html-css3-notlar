@@ -1,0 +1,11 @@
+$ana_renk : rgba(128, 128, 128, 0.452);
+
+body{
+    background-color: $ana_renk;
+}
+
+.container{
+    display: flex;
+    background-color: bisque;
+    margin: 50px auto;
+}

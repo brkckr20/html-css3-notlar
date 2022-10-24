@@ -1,0 +1,9 @@
+body {
+  background-color: rgba(128, 128, 128, 0.452);
+}
+
+.container {
+  display: flex;
+  background-color: bisque;
+  margin: 50px auto;
+}/*# sourceMappingURL=tutorial.css.map */
