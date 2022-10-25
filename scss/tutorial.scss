@@ -1,11 +1,72 @@
-$ana_renk : rgba(128, 128, 128, 0.452);
+$ana_renk : rgba(185, 179, 179, 0.281);
+$buyukFont : 2rem;
+$yaziRenk : white;
+$kirmiziBorder : 2px solid red;
+$yardimciRenk : orange;
+$bodyFont : Helvetica, Arial, sans-serif;
+$bodyMargin : 10px 10px 0 5px;
+$redMap: (light : #e57373, medium :#f44336, dark : #b71c1c);
 
 body{
     background-color: $ana_renk;
+    font-family: $bodyFont;
+    margin: $bodyMargin;
 }
 
 .container{
     display: flex;
     background-color: bisque;
     margin: 50px auto;
+}
+
+.main {
+    .mainContent{
+    // &Content{
+        .p2{
+            color: blue;
+        }
+
+        .p1{
+            color: green;
+        }
+    }
+}
+
+a{
+    font-size: $buyukFont;
+    // hover olma durumu
+    &:hover{
+        color: map-get($redMap, dark);
+    }
+}
+
+
+
+
+.p1{
+    font-size: $buyukFont;
+    color: $yaziRenk;
+    border: $kirmiziBorder;
+}
+.p2{
+    $yardimciRenk : purple;
+    color: $yardimciRenk;
+}
+
+.p3{
+    color: map-get($redMap, light);
+}
+
+.p4{
+    /* başlangıcı ortak olan değerlerin kısa yazımı */
+    // text-transform gibi
+    text:{
+        align : center;
+        transform : uppercase;
+        overflow : ellipsis;
+    }
+    font:{
+        family: Georgia;
+        size: 3rem;
+    }
 }
