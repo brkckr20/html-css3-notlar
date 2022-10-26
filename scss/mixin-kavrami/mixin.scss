@@ -1,0 +1,31 @@
+@mixin menu-list($bg:red,$renk) {
+    a{
+        background-color: $bg;
+        color: white;
+        margin: 5px;
+        &:hover{
+            color: $renk;
+        }
+    }
+}
+
+@mixin test-icerik($color){
+    .test{
+        color: $color;
+        @content
+    }
+}
+
+@include test-icerik(brown){
+    background-color: purple;
+}
+
+.navbar{
+    li{
+        @include menu-lists(aqua,red)
+    }
+}
+
+ul{
+    list-style: none;
+}

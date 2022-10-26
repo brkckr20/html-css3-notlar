@@ -1,0 +1,12 @@
+.navbar a {
+  background-color: orange;
+  color: white;
+  margin: 5px;
+}
+.navbar a:hover {
+  color: pink;
+}
+
+ul {
+  list-style: none;
+}/*# sourceMappingURL=mixin.css.map */
