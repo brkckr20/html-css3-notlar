@@ -1,0 +1,24 @@
+// $bg-color : #0ac;
+$bg-color : darken(#0ac,30);
+
+@function ikiyeKatla($deger){
+    @return $deger * 2; 
+}
+
+@function textRenkAyarla($arkaPlanRengi){
+    @if(lightness($arkaPlanRengi) > 70){
+        @return #333
+    }
+    @else{
+        @return white
+    }
+}
+
+.div{
+    width: 300px;
+    height: ikiyeKatla(300px);
+    background-color: $bg-color;
+    font-size: ikiyeKatla(2rem);
+    color: textRenkAyarla($bg-color);
+}
+
