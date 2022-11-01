@@ -1,0 +1,31 @@
+
+body{
+    background-color: $ana_renk;
+    color: $yardimci_renk;
+}
+
+@mixin button-temel {
+    border-radius: 2px;
+    margin: 5px;
+}
+
+%button-base{
+    border-radius: 2px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+%button-base:hover{
+    padding: 10px
+}
+
+.menu-button{
+    @extend %button-base;
+    color: purple;
+}
+
+.submit-button{
+    @extend %button-base;
+    @extend .menu-button;
+    font-size: 1rem;
+}

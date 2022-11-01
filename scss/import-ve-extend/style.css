@@ -1,0 +1,25 @@
+body {
+  background-color: yellow;
+  color: black;
+}
+
+.submit-button, .menu-button {
+  border-radius: 2px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover, .menu-button:hover {
+  padding: 10px;
+}
+
+.menu-button, .submit-button {
+  color: purple;
+}
+
+.submit-button {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
