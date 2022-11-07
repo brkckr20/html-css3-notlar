@@ -1,15 +1,8 @@
 @import '_reset.scss';
 @import "variables";
 @import "mixins";
+@import "layouts";
+@import "components";
 
 
-.fullscreen-header{
-    background-color: orange;
-    height: 100vh;
-    @include flexCenter;
-    flex-direction: column;
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.288),rgba(204, 204, 204, 0.137)),url("https://images.unsplash.com/photo-1667475593866-df5afa3bd5f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80");
-    background-size: cover;
-    background-position-x: 50%;
-    background-position-x: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');

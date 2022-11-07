@@ -1,0 +1,33 @@
+
+.site-logo{
+    height: 3rem;
+}
+.header-title{
+    font-size: 2rem;
+    color: white;
+}
+.header-subtitle{
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: $main-color;
+    padding: .5rem;
+    border-radius: 50px;
+    &:hover{
+        color: white;
+        background-color: $main-color-light;
+    }
+}
+
+.icon-asagi{
+    position: absolute;
+    bottom: 10px;
+    width: 2rem;
+    left: 50%;
+}
