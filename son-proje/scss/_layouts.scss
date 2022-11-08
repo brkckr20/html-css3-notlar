@@ -42,3 +42,32 @@ body{
 
     }
 }
+
+.section{
+    margin: 1rem 0;
+    padding: 1rem;
+    &-title{
+        text-align: center;
+    }
+    &--accent{
+        background-color: $main-color;
+    }
+}
+
+.hakkimda-grid{
+    display: grid;
+    grid-template-columns: minmax(auto,500px);
+    row-gap: 2rem;
+    padding: .5rem;
+    &__item{
+        @include flexCenter;
+    }
+    &__resim{
+        width: 25%;
+        margin-right: 1rem;
+    }
+    &__yazi{
+        font-size: .8rem;
+        line-height: 1.5;
+    }
+}

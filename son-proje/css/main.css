@@ -47,6 +47,37 @@ body {
   color: #189db8;
 }
 
+.section {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.section-title {
+  text-align: center;
+}
+.section--accent {
+  background-color: #189db8;
+}
+
+.hakkimda-grid {
+  display: grid;
+  grid-template-columns: minmax(auto, 500px);
+  row-gap: 2rem;
+  padding: 0.5rem;
+}
+.hakkimda-grid__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hakkimda-grid__resim {
+  width: 25%;
+  margin-right: 1rem;
+}
+.hakkimda-grid__yazi {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
 .site-logo {
   height: 3rem;
 }
@@ -80,6 +111,28 @@ body {
   bottom: 10px;
   width: 2rem;
   left: 50%;
+}
+
+.egitim-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.egitim-card {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0.5rem;
+  border: 1px solid #1b2522;
+  border-radius: 0.5rem;
+}
+.egitim-card--java {
+  background-color: beige;
+}
+.egitim-card--nodejs {
+  background-color: white;
+}
+.egitim-card--flutter {
+  background-color: pink;
 }
 
 /*# sourceMappingURL=main.css.map */
