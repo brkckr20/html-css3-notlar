@@ -24,12 +24,19 @@ body{
     right: 0;
     z-index: 1000;
     text-align: center;
+
+    @include responsive(small){
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__list{
         display: flex;
         list-style: none;
         justify-content: space-around;
         align-items: center;
         margin-bottom: .5rem;
+        column-gap: 10px;
 
         &-item{
             text-decoration: none;
@@ -69,5 +76,25 @@ body{
     &__yazi{
         font-size: .8rem;
         line-height: 1.5;
+    }
+
+    @include responsive(medium){
+        grid-template-columns: repeat(2,minmax(auto,500px));
+        justify-content: center;
+    }
+}
+
+.egitim-container{
+    display: flex;
+    flex-direction: column;
+    @include responsive(medium){
+        flex-direction: row;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    @include responsive(desktop){
+        flex-direction: row;
+        max-width: 80%;
+        margin: 0 auto;
     }
 }

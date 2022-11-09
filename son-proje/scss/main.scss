@@ -1,30 +1,44 @@
 @import '_reset.scss';
 @import "variables";
 @import "mixins";
+@import "animations";
 @import "layouts";
 @import "components";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-.egitim-container{
-    display: flex;
-    flex-direction: column;
+
+.form{
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.egitim-card{
-    text-align: center;
-    padding: 1rem;
-    margin: 1rem .5rem;
+.form-label{
+    color: $second-color;
+    font-weight: bold;
+    display: block;
+}
+.form-input{
+    width: 100%;
+    margin-top: .25rem;
+    margin-bottom: .75rem;
+    outline: none;
     border: 1px solid $second-color;
-    border-radius: .5rem;
-    &--java{
-        background-color: beige;
+    border-radius: .3rem;
+    padding: 0.5rem;
+    resize: vertical;
+    max-height: 150px;
+    &:hover,&:focus{
+        border-color: $main-color;
     }
-    &--nodejs{
-        background-color: white;
-    }
-    &--flutter{
-        background-color: pink;
-    }
+}
+
+.btn-container{
+    text-align: right;
+}
+
+.btn-kare{
+    font-size: 1rem;
+    border-radius: .3rem;
 }

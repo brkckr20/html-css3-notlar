@@ -5,6 +5,49 @@
   box-sizing: border-box;
 }
 
+@keyframes soldanGelenYazi {
+  0% {
+    transform: translateX(-100%);
+  }
+  70% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes sagdanGelenYazi {
+  0% {
+    transform: translateX(50%);
+  }
+  70% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes ortayaCik {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes asagiOk {
+  0% {
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+}
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -32,12 +75,19 @@ body {
   z-index: 1000;
   text-align: center;
 }
+@media (min-width: 576px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .nav__list {
   display: flex;
   list-style: none;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 0.5rem;
+  column-gap: 10px;
 }
 .nav__list-item {
   text-decoration: none;
@@ -77,14 +127,44 @@ body {
   font-size: 0.8rem;
   line-height: 1.5;
 }
+@media (min-width: 768px) {
+  .hakkimda-grid {
+    grid-template-columns: repeat(2, minmax(auto, 500px));
+    justify-content: center;
+  }
+}
+
+.egitim-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .egitim-container {
+    flex-direction: row;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  .egitim-container {
+    flex-direction: row;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
 
 .site-logo {
   height: 3rem;
+  transition: 0.5s;
+}
+.site-logo:hover {
+  transform: scale(1.1);
 }
 
 .header-title {
   font-size: 2rem;
   color: white;
+  animation: soldanGelenYazi 1s;
 }
 
 .header-subtitle {
@@ -92,6 +172,7 @@ body {
   color: white;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  animation: sagdanGelenYazi 1s;
 }
 
 .btn {
@@ -100,6 +181,8 @@ body {
   background-color: #189db8;
   padding: 0.5rem;
   border-radius: 50px;
+  border: none;
+  animation: ortayaCik 1s;
 }
 .btn:hover {
   color: white;
@@ -111,11 +194,7 @@ body {
   bottom: 10px;
   width: 2rem;
   left: 50%;
-}
-
-.egitim-container {
-  display: flex;
-  flex-direction: column;
+  animation: asagiOk 1s infinite;
 }
 
 .egitim-card {
@@ -124,6 +203,11 @@ body {
   margin: 1rem 0.5rem;
   border: 1px solid #1b2522;
   border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  flex: 1;
+}
+.egitim-card:hover {
+  transform: scale(1.05);
 }
 .egitim-card--java {
   background-color: beige;
@@ -133,6 +217,41 @@ body {
 }
 .egitim-card--flutter {
   background-color: pink;
+}
+
+.form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.form-label {
+  color: #1b2522;
+  font-weight: bold;
+  display: block;
+}
+
+.form-input {
+  width: 100%;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  outline: none;
+  border: 1px solid #1b2522;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  resize: vertical;
+  max-height: 150px;
+}
+.form-input:hover, .form-input:focus {
+  border-color: #189db8;
+}
+
+.btn-container {
+  text-align: right;
+}
+
+.btn-kare {
+  font-size: 1rem;
+  border-radius: 0.3rem;
 }
 
 /*# sourceMappingURL=main.css.map */
