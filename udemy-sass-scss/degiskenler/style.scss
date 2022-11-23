@@ -1,0 +1,17 @@
+@import "variable";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $color;
+    color: $anaRenk;
+}
+p{
+    border: $border;
+    padding: 10px;
+    width: $ekranGenisligi - 20%;
+    font-family: $font1;
+}

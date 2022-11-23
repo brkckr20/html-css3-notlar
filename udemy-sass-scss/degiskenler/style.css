@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: pink;
+  color: #5c5959;
+}
+
+p {
+  border: 1px solid #000;
+  padding: 10px;
+  width: 80%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*# sourceMappingURL=style.css.map */
