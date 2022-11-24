@@ -1,0 +1,17 @@
+/* map get*/
+
+$renk : (
+    "acik" : #fff,
+    "gri" : rgb(175, 54, 54),
+    "koyu" : #000,
+    "pembe": pink,
+    "mavi": blue
+);
+
+body{
+    background-color: map-get($renk, "gri"); //çağrılma işlemi
+}
+
+h1{
+    color: map-get($renk, "pembe" );
+}
