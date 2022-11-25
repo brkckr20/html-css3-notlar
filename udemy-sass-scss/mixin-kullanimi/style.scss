@@ -1,0 +1,30 @@
+// @mixin boyut {
+//     width: 100px;
+//     height: 100px;
+// }
+
+
+
+@mixin renk($arka,$renk) {
+    background-color: $arka;
+    color: $renk;
+}
+
+
+
+@mixin boyut($genislik,$yukseklik : null) {
+    width: $genislik;
+    height: $yukseklik;
+}
+
+@mixin ucnokta {
+    overflow: hidden;
+    text-decoration: ellipsis;
+    white-space: nowrap;
+}
+
+.kutu {
+    @include boyut(300px,50px);
+    @include ucnokta;
+    @include renk(#ebebeb, rgb(255, 0, 0));
+}
