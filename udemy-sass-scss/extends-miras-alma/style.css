@@ -1,0 +1,29 @@
+.kapsa {
+  display: flex;
+}
+
+.message, .warning, .success, .error {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+  padding: 15px;
+  margin: 15px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.error {
+  background-color: red;
+}
+
+.success {
+  background-color: green;
+}
+
+.warning {
+  background-color: darkorange;
+}
+
+/*# sourceMappingURL=style.css.map */
