@@ -1,0 +1,14 @@
+svg#logo {
+  width: 120px;
+}
+
+#search:focus {
+  border-color: #ced4da;
+}
+
+#search-text {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*# sourceMappingURL=style.css.map */
