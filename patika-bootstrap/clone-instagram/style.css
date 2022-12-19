@@ -11,4 +11,9 @@ svg#logo {
   transform: translateY(-50%);
 }
 
+.sag-kisim {
+  position: sticky;
+  top: 70px;
+}
+
 /*# sourceMappingURL=style.css.map */
