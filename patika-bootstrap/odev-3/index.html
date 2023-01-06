@@ -14,7 +14,7 @@
 
 <body class="body">
   <!-- navbar -->
-  <div class="navbarbg fixed-top">
+  <div class="navbarbg fixed-top border-bottom">
     <div class="">
       <div class="">
         <nav class="container navbar p-0 navbar-expand-lg navbar-light ">
@@ -23,7 +23,16 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
           <form class="form-inline">
-            <input class="form-control searche" type="search" placeholder="Arama Yap" aria-label="Search" />
+            <div class="position-relative d-flex align-items-center">
+              <span class="position-absolute ml-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+              </span>
+              <input class="form-control searche pl-4" type="search" placeholder="Arama Yap" aria-label="Search" />
+            </div>
           </form>
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
@@ -519,5 +528,9 @@
     <span><i class="fas fa-chevron-up fa-sm ml-3"></i></span>
   </nav>
 </body>
+
+<script>
+  let nav_search = document.getElementById("nav-search");
+</script>
 
 </html>
